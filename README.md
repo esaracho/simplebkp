@@ -3,9 +3,9 @@ Simple script backup, optional encription and upload to google drive
 
 USAGE
 
-simplebkp [-e] [-c] -o <directorio de origen> -d <directorio de destino>
-  -e Encriptar el fichero de backup
-  -c subir el fichero de backup a Google Drive
+simplebkp [-e] [-c] -o \<source directory\> -d \<destination directory\>
+  -e Encrypt the backup file
+  -c upload the backup file to Google Drive
 
 
 DEPENDENCIES
