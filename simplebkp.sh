@@ -62,6 +62,7 @@ if [[ -z $ORIGEN ]] || [[ -z $DESTINO ]]
 then
   echo "Los directorios de origen y destino son obligatorios\n"
   showhelp
+  exit 0
 fi
 
 #realiza el backup
@@ -72,6 +73,7 @@ if [ -n "$ENC" ]
 then
   FILENAMEENC=$FILENAME".enc"
   openssl enc -e -aes-256-cbc -pass pass:$PASS -in $DESTINO/$FILENAME -out $DESTINO/$FILENAMEENC
+  rm $DESTINO/$FILENAME
   FILENAME=$FILENAMEENC
 fi
 
