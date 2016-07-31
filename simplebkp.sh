@@ -17,7 +17,7 @@
 PASS="abc123"
 
 #Define el nombre del fichero
-FILENAME=`date +%d-%m-%G`".tar.gz"
+FILENAME=`date +%G-%m-%d`".tar.gz"
 
 #muestra la ayuda
 function showhelp(){
